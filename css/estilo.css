@@ -22,6 +22,7 @@
 .container :nth-child(n + 5):hover{
     background-color: #150f0f;
     color: #ff0000;
+    transition: 1s;
 }
   
   .box{
