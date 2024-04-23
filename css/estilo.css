@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+ }
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: minmax(min-content, max-content) minmax(min-content,max-content) minmax(min-content, max-content); */
+    grid-template-rows: 150px 150px 150px;
+    /* column-gap: 5px;
+    row-gap: 5px; */
+    gap:5px;
+    
+}
+
+.container :nth-child(n + 5){
+    background-color: #ff0000;
+}
+
+.container :nth-child(n + 5):hover{
+    background-color: #150f0f;
+    color: #ff0000;
+}
+
+.box{
+    background-color: blueviolet;
+    border: 1px solid #ff0000;
+    text-align: center;
+}
