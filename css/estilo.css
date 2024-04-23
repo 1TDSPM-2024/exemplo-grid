@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: minmax(min-content, max-content) minmax(min-content,max-content) minmax(min-content, max-content); */
+    grid-template-rows: 150px 150px 150px;
+    /* column-gap: 5px;
+    row-gap: 5px; */
+    gap:5px;
+}
+
+
+  .box{
+      background-color: blueviolet;
+      border: 1px solid purple;
+      text-align: center;
+  }
+
+  .container :nth-child(n + 7){
+    background-color: purple;
+}
+
+.container :nth-child(n + 7):hover{
+    background-color: rgb(72, 0, 139);
+    color: rgb(178, 85, 255);
+    transition: all .4s ease;
+}
+
+  /* box-5{
+    background-color: purple;
+    transition: all .4s ease;
+}
+
+.box-5:hover{
+    background-color: white;
+    color: purple;
+} */
+
