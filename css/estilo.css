@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 150px 150px 150px;
+    gap: 5px;
+}
+
+.container :nth-child(n + 5) {
+    background-color: #f00;
+
+    &:hover {
+        background-color: black;
+        color: #fff;
+    }
+}
+
+.box{
+    background-color: blueviolet;
+    border: 1px solid #f00;
+    text-align: center;
+}
