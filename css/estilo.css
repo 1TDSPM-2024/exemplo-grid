@@ -7,22 +7,57 @@
 .container {
     width: 100vw;
     height: 100vh;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'conteudo1 login'
+    'conteudo2 login'
+    'footer footer';
+
     gap: 5px;
     /* column-gap | row-gap */
 }
 
 .box{
+    background-color: #f0f8;
     text-align: center;
 }
 
+/* VERSÃO 2 - GRID AREAS */
+
+.header {
+    grid-area: header;
+}
+
+.conteudo1 {
+    grid-area: conteudo1;
+}
+
+.conteudo2 {
+    grid-area: conteudo2;
+}
+
+.login {
+    grid-area: login;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+/* VERSÃO 1 */
+
+/*
 .container :nth-child(1) {
     background-color: #00f;
-    /* qtde de colunas que ocupa */
+    comentario: qtde de colunas que ocupa
     grid-column: span 2;
-    /* qtde de linhas que ocupa */
+    comentario: qtde de linhas que ocupa
     grid-row: span 1;
 }
 
@@ -72,6 +107,10 @@
         grid-row: span 1;
     }
 }
+*/
+
+
+/* OUTROS */
 
 
 /* seleciona mais de uma box */
